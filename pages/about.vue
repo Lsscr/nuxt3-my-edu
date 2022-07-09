@@ -7,7 +7,6 @@
   </div>
 </template>
 <script setup>
-import { NIcon } from 'naive-ui'
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Search, SearchCircleOutline } from '@vicons/ionicons5'
 </script>

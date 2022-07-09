@@ -9,8 +9,6 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { NResult, NButton } from 'naive-ui'
 interface Com {
   // eslint-disable-next-line @typescript-eslint/ban-types
   error?: Object | unknown

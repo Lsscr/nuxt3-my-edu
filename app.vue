@@ -6,7 +6,4 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { NConfigProvider } from 'naive-ui'
-</script>
+<script lang="ts" setup></script>

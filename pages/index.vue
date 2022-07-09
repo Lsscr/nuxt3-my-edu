@@ -1,13 +1,17 @@
 <template>
-  <div>
-    <n-button type="primary" size="medium" @click="handle">故意错误</n-button>
-    <nuxt-link to="/about"> <n-button type="error" size="medium">跳转到关于页</n-button></nuxt-link>
-  </div>
+  <div><n-button type="primary" size="medium">你好啊</n-button>{{ data }}</div>
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { NButton } from 'naive-ui'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const handle = () => throwError('故意错误')
+const { data } = useFetch('index', {
+  key: 'index',
+  headers: {
+    appid: 'bd9d01ecc75dbbaaefce'
+  },
+  baseURL: 'http://demonuxtapi.dishait.cn/pc/',
+  // 类似于响应拦截器
+  transform: (res: any) => {
+    return res.data
+  }
+})
 </script>

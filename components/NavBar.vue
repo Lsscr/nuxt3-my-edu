@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { NButton, NIcon, NDropdown, DropdownOption, NAvatar } from 'naive-ui'
+import { DropdownOption } from 'naive-ui'
 import { Search } from '@vicons/ionicons5'
 import { log } from 'console'
 interface NavbarType {
