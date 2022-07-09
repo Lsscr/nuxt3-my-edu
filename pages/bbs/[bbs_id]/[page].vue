@@ -1,5 +1,5 @@
 <template>
-  <div>{{ $route.params.type + ' ' + $route.params.page }}</div>
+  <div>{{ $route.params.bbs_id + ' ' + $route.params.page }}+{{ $route.name }}</div>
 </template>
 
 <script setup lang="ts"></script>

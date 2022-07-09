@@ -1,5 +1,5 @@
 <template>
-  <div>我是考试页</div>
+  <div>{{ $route.params.page }}+{{ $route.name }}</div>
 </template>
 
 <script setup lang="ts"></script>
